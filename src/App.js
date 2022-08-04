@@ -1,8 +1,14 @@
+import "./App.css";
+import "./index.css";
 function App() {
   return (
-    <div id="app-container">
-      <h2>Will Parker's Portfolio Page</h2>
-      <h3>Deploying React to Github</h3>
+    <div class="app-container">
+      <div class="title-section">
+        <div id="main-heading">Will Parker's Portfolio Page</div>
+        <div id="main-heading-overlay">Will Parker's Portfolio Page</div>
+        <div id="secondary-heading">Project Hub</div>
+        <div id="secondary-heading-overlay">Project Hub</div>
+      </div>
     </div>
   );
 }

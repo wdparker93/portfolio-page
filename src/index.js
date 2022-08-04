@@ -1,3 +1,4 @@
+import "./fonts/VintageKing.ttf";
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";

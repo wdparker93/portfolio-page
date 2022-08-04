@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "GinchiestShadow";
+  src: local("GinchiestShadow"),
+    url("./fonts/GinchiestShadow.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Ginchiest";
+  src: local("Ginchiest"), url("./fonts/Ginchiest.ttf") format("truetype");
+  font-weight: bold;
+}
