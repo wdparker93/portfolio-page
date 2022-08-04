@@ -1,7 +1,7 @@
 function App() {
   return (
-    <div>
-      <h2>Github Pages</h2>
+    <div id="app-container">
+      <h2>Will Parker's Portfolio Page</h2>
       <h3>Deploying React to Github</h3>
     </div>
   );
