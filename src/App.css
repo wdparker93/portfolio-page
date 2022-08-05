@@ -6,7 +6,7 @@
   align-items: center;
   background-image: url("https://static.vecteezy.com/system/resources/previews/003/988/578/original/psychedelic-groovy-retro-background-vector.jpg");
   background-size: cover;
-  opacity: 0.9;
+  opacity: 0.93;
   position: fixed;
   top: 0;
   left: 0;
@@ -32,7 +32,7 @@
 
 #secondary-heading {
   font-family: "GinchiestShadow";
-  font-size: 5vh;
+  font-size: 7vh;
   color: #411530;
   position: fixed;
   top: 20vh;
@@ -41,9 +41,45 @@
 
 #secondary-heading-overlay {
   font-family: "Ginchiest";
-  font-size: 5vh;
+  font-size: 7vh;
   color: #f5c7a9;
   position: fixed;
   top: 20vh;
   left: 3vw;
+}
+
+#icon-list {
+  list-style: none;
+  justify-content: left;
+  justify-items: left;
+}
+
+#python-icon {
+  height: 10vh;
+  width: auto;
+}
+
+#java-icon {
+  height: 14vh;
+  width: auto;
+}
+
+#c-icon {
+  height: 10vh;
+  width: auto;
+}
+
+#fe-icon {
+  height: 11vh;
+  width: auto;
+}
+
+#fe-icon {
+  height: 11vh;
+  width: auto;
+}
+
+#react-icon {
+  height: 10vh;
+  width: auto;
 }
