@@ -19,18 +19,33 @@ function App() {
         <ul id="icon-list">
           <li>
             <img src={python} id="python-icon" alt="Python Icon" />
+            <a href="https://github.com/stars/wdparker93/lists/python-projects">
+              Python Projects
+            </a>
           </li>
           <li>
             <img src={java} id="java-icon" alt="Java Icon" />
+            <a href="https://github.com/stars/wdparker93/lists/java-projects">
+              Java Projects
+            </a>
           </li>
           <li>
             <img src={c} id="c-icon" alt="C Icon" />
+            <a href="https://github.com/stars/wdparker93/lists/c-projects">
+              C Projects
+            </a>
           </li>
           <li>
             <img src={htmljscss} id="fe-icon" alt="HTML JS CSS Icon" />
+            <a href="https://codepen.io/wdparker93">
+              Front-End Web Development Projects
+            </a>
           </li>
           <li>
             <img src={react} id="react-icon" alt="React Icon" />
+            <a href="https://codepen.io/wdparker93">
+              Front-End Web Development Projects
+            </a>
           </li>
         </ul>
       </div>
