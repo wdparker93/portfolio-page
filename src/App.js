@@ -5,6 +5,7 @@ import java from "./images/java-icon.png";
 import c from "./images/c-icon.png";
 import htmljscss from "./images/html-js-css-icon.png";
 import react from "./images/react-icon.png";
+import geodivline from "./images/geometric-divider-line.png";
 
 function App() {
   return (
@@ -19,35 +20,52 @@ function App() {
         <ul id="icon-list">
           <li>
             <img src={python} id="python-icon" alt="Python Icon" />
-            <a href="https://github.com/stars/wdparker93/lists/python-projects">
+            <a
+              class="link"
+              href="https://github.com/stars/wdparker93/lists/python-projects"
+            >
               Python Projects
             </a>
           </li>
           <li>
             <img src={java} id="java-icon" alt="Java Icon" />
-            <a href="https://github.com/stars/wdparker93/lists/java-projects">
+            <a
+              class="link"
+              href="https://github.com/stars/wdparker93/lists/java-projects"
+            >
               Java Projects
             </a>
           </li>
           <li>
             <img src={c} id="c-icon" alt="C Icon" />
-            <a href="https://github.com/stars/wdparker93/lists/c-projects">
+            <a
+              class="link"
+              href="https://github.com/stars/wdparker93/lists/c-projects"
+            >
               C Projects
             </a>
           </li>
           <li>
             <img src={htmljscss} id="fe-icon" alt="HTML JS CSS Icon" />
-            <a href="https://codepen.io/wdparker93">
-              Front-End Web Development Projects
+            <a class="link" href="https://codepen.io/wdparker93">
+              Front-End Web Dev Projects
             </a>
           </li>
           <li>
             <img src={react} id="react-icon" alt="React Icon" />
-            <a href="https://codepen.io/wdparker93">
-              Front-End Web Development Projects
+            <a class="link" href="https://codepen.io/wdparker93">
+              Front-End Web Dev Projects
             </a>
           </li>
         </ul>
+        <div>
+          <img
+            src={geodivline}
+            id="geo-div-line"
+            alt="Geometric Divider Line"
+          />
+        </div>
+        <textarea value="Some more text" />
       </div>
     </div>
   );

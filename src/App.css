@@ -4,10 +4,21 @@
   display: grid;
   background-image: url("https://static.vecteezy.com/system/resources/previews/003/988/578/original/psychedelic-groovy-retro-background-vector.jpg");
   background-size: cover;
+  background-attachment: fixed;
   opacity: 0.93;
   position: fixed;
   top: 0;
   left: 0;
+  overflow-y: scroll;
+}
+
+.title-section {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/003/988/578/original/psychedelic-groovy-retro-background-vector.jpg");
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 33vh;
+  z-index: 997;
 }
 
 #main-heading {
@@ -17,15 +28,17 @@
   position: fixed;
   top: 3vh;
   left: 3.2vw;
+  z-index: 998;
 }
 
 #main-heading-overlay {
   font-family: "Ginchiest";
   font-size: 10vh;
-  color: #f5c7a9;
+  color: #ecccb2;
   position: fixed;
   top: 3vh;
   left: 3vw;
+  z-index: 999;
 }
 
 #secondary-heading {
@@ -35,23 +48,27 @@
   position: fixed;
   top: 20vh;
   left: 3.05vw;
+  z-index: 998;
 }
 
 #secondary-heading-overlay {
   font-family: "Ginchiest";
   font-size: 7vh;
-  color: #f5c7a9;
+  color: #ecccb2;
   position: fixed;
   top: 20vh;
   left: 3vw;
+  z-index: 999;
 }
 
 .project-overview {
-  position: fixed;
+  position: relative;
+  width: 29vw;
+  height: 66vh;
   background-color: rgba(255, 255, 255, 0.55);
-  top: 33vh;
+  top: 5vh;
   left: 3vw;
-  border-radius: 10px;
+  border-radius: 0.5vw;
 }
 
 #icon-list {
@@ -81,12 +98,34 @@
   width: auto;
 }
 
-#fe-icon {
-  height: 11vh;
+#react-icon {
+  height: 9vh;
   width: auto;
 }
 
-#react-icon {
-  height: 10vh;
+.link {
+  text-decoration: none;
+  font-family: "Ginchiest";
+  color: #411530;
+  text-shadow: 2px 0px #ecccb2, 3px 0px #411530;
+  font-size: 4vh;
+  position: relative;
+  top: -3vh;
+  left: 1vw;
+}
+
+.link:hover {
+  text-decoration: none;
+  font-family: "Ginchiest";
+  color: #af3614;
+  text-shadow: 2px 0px #ecccb2, 3px 0px #af3614;
+  font-size: 4vh;
+  position: relative;
+  top: -3vh;
+  left: 1vw;
+}
+
+#geo-div-line {
+  height: 7vh;
   width: auto;
 }
