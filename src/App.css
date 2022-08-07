@@ -74,7 +74,7 @@
   width: 29vw;
   height: 60vh;
   background-color: rgba(255, 255, 255, 0.55);
-  top: 5vh;
+  top: 3vh;
   left: 3vw;
   border-radius: 0.5vw;
 }
@@ -137,6 +137,21 @@
   width: auto;
 }
 
+#resume-icon {
+  height: 10vh;
+  width: auto;
+}
+
+#computer-picture {
+  height: 65vh;
+  width: auto;
+}
+
+#retro-computer {
+  position: relative;
+  left: 0vw;
+}
+
 .link {
   text-decoration: none;
   font-family: "Ginchiest";
@@ -184,10 +199,11 @@
 .professional-links {
   position: relative;
   width: 29vw;
-  height: 52vh;
+  height: 45vh;
   background-color: rgba(255, 255, 255, 0.55);
-  top: 5vh;
+  top: 3vh;
   border-radius: 0.5vw;
+  left: 2vw;
 }
 
 #link-list {
@@ -199,12 +215,12 @@
 
 #horizontal-break-1 {
   height: 1.5vh;
-  width: 85vw;
+  width: 80vw;
   border-width: 0;
   background-color: #411530;
   border-radius: 0.5vw;
   position: relative;
-  top: 5vh;
+  top: 7vh;
 }
 
 #gmail-link {

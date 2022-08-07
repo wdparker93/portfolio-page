@@ -6,7 +6,8 @@ import c from "./images/c-icon.png";
 import felang from "./images/fe-languages.png";
 import linkedin from "./images/linked-in-icon.png";
 import github from "./images/github-icon.png";
-import gmail from "./images/gmail-icon.png";
+import resume from "./images/resume-icon.png";
+import computer from "./images/retro-computer.png";
 
 function App() {
   return (
@@ -60,7 +61,7 @@ function App() {
         </div>
         <div class="professional-links">
           <div class="window-title" id="professional-window-title">
-            Networking Links
+            Networking Information
           </div>
           <ul id="link-list">
             <li>
@@ -84,16 +85,19 @@ function App() {
               </a>
             </li>
             <li>
-              <img src={gmail} id="gmail-icon" alt="Gmail Icon" />
+              <img src={resume} id="resume-icon" alt="Resume Icon" />
               <a
                 class="link"
-                id="gmail-link"
-                href="mailto: wdparker93@gmail.com"
+                id="resume-link"
+                href="https://app.pluralsight.com/id"
               >
-                Email wdparker93@gmail.com
+                Resume
               </a>
             </li>
           </ul>
+        </div>
+        <div id="retro-computer">
+          <img src={computer} id="computer-picture" alt="Retro Computer" />
         </div>
       </div>
       <hr id="horizontal-break-1"></hr>
