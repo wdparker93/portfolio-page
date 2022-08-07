@@ -101,6 +101,9 @@ function App() {
         </div>
       </div>
       <hr id="horizontal-break-1"></hr>
+      <div class="synopsis-section">
+        <p>Hello!</p>
+      </div>
     </div>
   );
 }

@@ -215,12 +215,12 @@
 
 #horizontal-break-1 {
   height: 1.5vh;
-  width: 80vw;
+  width: 55vw;
   border-width: 0;
   background-color: #411530;
   border-radius: 0.5vw;
   position: relative;
-  top: 7vh;
+  top: 3vh;
 }
 
 #gmail-link {
@@ -243,4 +243,14 @@
   position: relative;
   top: -2vh;
   left: 3vw;
+}
+
+.synopsis-section {
+  position: relative;
+  width: 80vw;
+  height: 45vh;
+  background-color: rgba(255, 255, 255, 0.55);
+  top: 8vh;
+  border-radius: 0.5vw;
+  left: 8vw;
 }
