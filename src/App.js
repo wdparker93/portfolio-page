@@ -8,6 +8,7 @@ import linkedin from "./images/linked-in-icon.png";
 import github from "./images/github-icon.png";
 import resume from "./images/resume-icon.png";
 import computer from "./images/retro-computer.png";
+import arrow from "./images/arrow.png";
 
 function App() {
   return (
@@ -54,7 +55,7 @@ function App() {
             <li>
               <img src={felang} id="fe-icon" alt="HTML JS CSS Icon" />
               <a class="link" id="fe-link" href="https://codepen.io/wdparker93">
-                Front-End Web Dev Projects
+                Web Development Projects
               </a>
             </li>
           </ul>
@@ -95,6 +96,11 @@ function App() {
               </a>
             </li>
           </ul>
+          <div id="down-arrow">
+            <img src={arrow} id="arrow-picture" alt="Down Arrow" />
+            <p id="synopsis-indicator">A bit about me</p>
+            <p id="synopsis-indicator-overlay">A bit about me</p>
+          </div>
         </div>
         <div id="retro-computer">
           <img src={computer} id="computer-picture" alt="Retro Computer" />
@@ -102,7 +108,21 @@ function App() {
       </div>
       <hr id="horizontal-break-1"></hr>
       <div class="synopsis-section">
-        <p>Hello!</p>
+        <p id="synopsis">
+          Hello! <br></br>
+          <br></br>My name is Will Parker. I've recently switched career paths
+          from chemical engineering to software development. I'm enjoying the
+          change and the process of learning new technologies. The opportunity
+          to contribute to the rapidly evolving industry of information and
+          computer science is exciting, and I'm thankful to have the chance to
+          leave an impact.
+          <br></br>
+          <br></br>I hope you enjoy your visit to my web page. I can be reached
+          via LinkedIn you have any questions.
+          <br></br>
+          <br></br>
+          -Will
+        </p>
       </div>
     </div>
   );

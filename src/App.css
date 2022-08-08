@@ -123,33 +123,60 @@
 }
 
 #linkedin-icon {
-  height: 9vh;
+  height: 8vh;
   width: auto;
 }
 
 #github-icon {
-  height: 9vh;
-  width: auto;
-}
-
-#gmail-icon {
-  height: 6.5vh;
+  height: 8vh;
   width: auto;
 }
 
 #resume-icon {
-  height: 10vh;
+  height: 9vh;
   width: auto;
 }
 
 #computer-picture {
-  height: 65vh;
+  height: 63vh;
   width: auto;
 }
 
 #retro-computer {
   position: relative;
   left: 0vw;
+}
+
+#down-arrow {
+  position: relative;
+  left: 3vw;
+}
+
+#arrow-picture {
+  height: 8vh;
+  width: auto;
+  margin: 5vh 0 0 1vw;
+  transform: rotate(-30deg);
+}
+
+#synopsis-indicator {
+  position: relative;
+  font-family: "GinchiestShadow";
+  font-size: 4vh;
+  color: #411530;
+  top: -14vh;
+  left: 7.6vw;
+  z-index: 995;
+}
+
+#synopsis-indicator-overlay {
+  position: relative;
+  font-family: "Ginchiest";
+  font-size: 4vh;
+  color: #ecccb2;
+  top: -24.3vh;
+  left: 7.5vw;
+  z-index: 996;
 }
 
 .link {
@@ -199,7 +226,7 @@
 .professional-links {
   position: relative;
   width: 29vw;
-  height: 45vh;
+  height: 42vh;
   background-color: rgba(255, 255, 255, 0.55);
   top: 3vh;
   border-radius: 0.5vw;
@@ -215,12 +242,12 @@
 
 #horizontal-break-1 {
   height: 1.5vh;
-  width: 55vw;
+  width: 66vw;
   border-width: 0;
   background-color: #411530;
   border-radius: 0.5vw;
   position: relative;
-  top: 3vh;
+  top: 3.5vh;
 }
 
 #gmail-link {
@@ -247,10 +274,22 @@
 
 .synopsis-section {
   position: relative;
-  width: 80vw;
-  height: 45vh;
+  margin: 0 0 10vh 0;
+  padding: 0 2vw 0 0;
+  width: 85vw;
+  height: 58vh;
   background-color: rgba(255, 255, 255, 0.55);
-  top: 8vh;
+  top: 7.5vh;
   border-radius: 0.5vw;
-  left: 8vw;
+  left: 6vw;
+}
+
+#synopsis {
+  font-family: "Ginchiest";
+  color: #411530;
+  text-shadow: 2px 0px #ecccb2, 3px 0px #af3614;
+  font-size: 4vh;
+  position: relative;
+  top: -3vh;
+  left: 1.2vw;
 }
