@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-page/static/css/main.d13d32d4.css",
-    "main.js": "/portfolio-page/static/js/main.1148a980.js",
+    "main.js": "/portfolio-page/static/js/main.cb56f179.js",
     "static/media/retro-computer.png": "/portfolio-page/static/media/retro-computer.d825a073fdea1ac304bb.png",
     "static/media/c-icon.png": "/portfolio-page/static/media/c-icon.de18ff13a9cb546e8849.png",
     "static/media/fe-languages.png": "/portfolio-page/static/media/fe-languages.0ad71253f7186d3b1ad3.png",
@@ -11,14 +11,14 @@
     "static/media/Ginchiest.ttf": "/portfolio-page/static/media/Ginchiest.52e55deac7c086e9b4fa.ttf",
     "static/media/GinchiestShadow.ttf": "/portfolio-page/static/media/GinchiestShadow.68cb9f31787158ed581e.ttf",
     "static/media/github-icon.png": "/portfolio-page/static/media/github-icon.41e563d4571ddc70f25e.png",
-    "static/media/arrow.png": "/portfolio-page/static/media/arrow.337ec483d2b8efa8b83c.png",
+    "static/media/arrow.png": "/portfolio-page/static/media/arrow.a8215bacaeecd0052583.png",
     "static/media/linked-in-icon.png": "/portfolio-page/static/media/linked-in-icon.62d42acea7e1b700307e.png",
     "index.html": "/portfolio-page/index.html",
     "main.d13d32d4.css.map": "/portfolio-page/static/css/main.d13d32d4.css.map",
-    "main.1148a980.js.map": "/portfolio-page/static/js/main.1148a980.js.map"
+    "main.cb56f179.js.map": "/portfolio-page/static/js/main.cb56f179.js.map"
   },
   "entrypoints": [
     "static/css/main.d13d32d4.css",
-    "static/js/main.1148a980.js"
+    "static/js/main.cb56f179.js"
   ]
 }
