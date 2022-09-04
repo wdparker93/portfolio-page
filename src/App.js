@@ -30,6 +30,7 @@ function App() {
               <a
                 class="link"
                 href="https://github.com/stars/wdparker93/lists/python-projects"
+                target="blank"
               >
                 Python Projects
               </a>
@@ -39,6 +40,7 @@ function App() {
               <a
                 class="link"
                 href="https://github.com/stars/wdparker93/lists/java-projects"
+                target="blank"
               >
                 Java Projects
               </a>
@@ -48,13 +50,19 @@ function App() {
               <a
                 class="link"
                 href="https://github.com/stars/wdparker93/lists/c-projects"
+                target="blank"
               >
                 C Projects
               </a>
             </li>
             <li>
               <img src={felang} id="fe-icon" alt="HTML JS CSS Icon" />
-              <a class="link" id="fe-link" href="https://codepen.io/wdparker93">
+              <a
+                class="link"
+                id="fe-link"
+                href="https://codepen.io/wdparker93"
+                target="blank"
+              >
                 Web Development Projects
               </a>
             </li>
@@ -71,6 +79,7 @@ function App() {
                 class="link"
                 id="linkedin-link"
                 href="https://www.linkedin.com/in/william-parker-215877aa"
+                target="blank"
               >
                 LinkedIn Profile
               </a>
@@ -81,6 +90,7 @@ function App() {
                 class="link"
                 id="github-link"
                 href="https://github.com/wdparker93"
+                target="blank"
               >
                 Github Page
               </a>
@@ -91,6 +101,7 @@ function App() {
                 class="link"
                 id="resume-link"
                 href="https://app.pluralsight.com/id"
+                target="blank"
               >
                 Resume
               </a>
