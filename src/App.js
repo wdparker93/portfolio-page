@@ -118,7 +118,7 @@ function App() {
           leave an impact.
           <br></br>
           <br></br>I hope you enjoy your visit to my web page. I can be reached
-          via LinkedIn you have any questions.
+          via LinkedIn if you have any questions.
           <br></br>
           <br></br>
           -Will
