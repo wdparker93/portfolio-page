@@ -18,6 +18,16 @@ function App() {
         <div id="main-heading-overlay">Will Parker's Portfolio Page</div>
         <div id="secondary-heading">Developer Overview</div>
         <div id="secondary-heading-overlay">Developer Overview</div>
+        <div id="feature-project-link-wrapper">
+          <a
+            class="link"
+            href="https://github.com/wdparker93/lobbyist-donation-tracker"
+            target="blank"
+            id="feature-project-link"
+          >
+            Featured Full-Stack Project
+          </a>
+        </div>
       </div>
       <div id="content-wrapper">
         <div class="project-overview">

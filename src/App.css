@@ -65,6 +65,22 @@
   z-index: 999;
 }
 
+#feature-project-link-wrapper {
+  width: 34vw;
+  height: 11vh;
+  background-color: rgba(255, 255, 255, 0.55);
+  position: relative;
+  top: 8vh;
+  left: 60vw;
+  border-radius: 0.5vw;
+}
+
+#feature-project-link {
+  font-size: 6vh;
+  position: relative;
+  top: 1vh;
+}
+
 #content-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
