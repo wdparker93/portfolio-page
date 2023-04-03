@@ -1,312 +1,110 @@
-.app-container {
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  background-image: url("https://static.vecteezy.com/system/resources/previews/003/988/578/original/psychedelic-groovy-retro-background-vector.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  opacity: 0.93;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #2c2e43;
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding: 1rem;
+}
+
+/* Navbar styles */
+nav {
   position: fixed;
   top: 0;
   left: 0;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  width: 100%;
+  background-color: #1a1d21;
+  z-index: 1;
 }
 
-.title-section {
-  background-image: url("https://static.vecteezy.com/system/resources/previews/003/988/578/original/psychedelic-groovy-retro-background-vector.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  position: sticky;
-  top: 0;
-  left: 0;
-  height: 33vh;
-  width: 100vw;
-  z-index: 997;
-}
-
-#main-heading {
-  font-family: "GinchiestShadow";
-  font-size: 10vh;
-  color: #411530;
-  position: fixed;
-  top: 3vh;
-  left: 3.2vw;
-  z-index: 998;
-}
-
-#main-heading-overlay {
-  font-family: "Ginchiest";
-  font-size: 10vh;
-  color: #ecccb2;
-  position: fixed;
-  top: 3vh;
-  left: 3vw;
-  z-index: 999;
-}
-
-#secondary-heading {
-  font-family: "GinchiestShadow";
-  font-size: 7vh;
-  color: #411530;
-  position: fixed;
-  top: 20vh;
-  left: 3.05vw;
-  z-index: 998;
-}
-
-#secondary-heading-overlay {
-  font-family: "Ginchiest";
-  font-size: 7vh;
-  color: #ecccb2;
-  position: fixed;
-  top: 20vh;
-  left: 3vw;
-  z-index: 999;
-}
-
-#feature-project-link-wrapper {
-  width: 34vw;
-  height: 11vh;
-  background-color: rgba(255, 255, 255, 0.55);
-  position: relative;
-  top: 8vh;
-  left: 60vw;
-  border-radius: 0.5vw;
-}
-
-#feature-project-link {
-  font-size: 6vh;
-  position: relative;
-  top: 1vh;
-}
-
-#content-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.project-overview {
-  position: relative;
-  width: 29vw;
-  height: 60vh;
-  background-color: rgba(255, 255, 255, 0.55);
-  top: 3vh;
-  left: 3vw;
-  border-radius: 0.5vw;
-}
-
-.window-title {
-  font-family: "Ginchiest";
-  color: #411530;
-  text-shadow: 2px 0px #ecccb2, 3px 0px #411530;
-  font-size: 5vh;
-  position: relative;
-  top: 1vh;
-  left: 1vw;
-}
-
-#icon-list {
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   list-style: none;
+  height: 80px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #e74c3c;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
   align-items: left;
-  position: relative;
-  left: -1vw;
+  padding: 4rem 2rem;
 }
 
-#python-icon {
-  height: 9vh;
-  width: auto;
-  position: relative;
-  left: 0.7vw;
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  width: 100%;
+  max-width: 80vw;
+  margin-bottom: 4rem;
 }
 
-#java-icon {
-  height: 12vh;
-  width: auto;
-  position: relative;
-  left: 0.7vw;
+section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: left;
 }
 
-#c-icon {
-  height: 9vh;
-  width: auto;
-  position: relative;
-  left: 0.7vw;
+section p {
+  font-size: 1.2rem;
+  text-align: left;
+  margin-bottom: 2rem;
 }
 
-#fe-icon {
-  height: 12vh;
-  width: auto;
-}
-
-#linkedin-icon {
-  height: 8vh;
-  width: auto;
-}
-
-#github-icon {
-  height: 8vh;
-  width: auto;
-}
-
-#resume-icon {
-  height: 9vh;
-  width: auto;
-}
-
-#computer-picture {
-  height: 63vh;
-  width: auto;
-}
-
-#retro-computer {
-  position: relative;
-  left: 0vw;
-}
-
-#down-arrow {
-  position: relative;
-  left: 3vw;
-}
-
-#arrow-picture {
-  height: 8vh;
-  width: auto;
-  margin: 5vh 0 0 1vw;
-  transform: rotate(-30deg);
-}
-
-#synopsis-indicator {
-  position: relative;
-  font-family: "GinchiestShadow";
-  font-size: 4vh;
-  color: #411530;
-  top: -14vh;
-  left: 7.6vw;
-  z-index: 995;
-}
-
-#synopsis-indicator-overlay {
-  position: relative;
-  font-family: "Ginchiest";
-  font-size: 4vh;
-  color: #ecccb2;
-  top: -24.3vh;
-  left: 7.5vw;
-  z-index: 996;
-}
-
-.link {
-  text-decoration: none;
-  font-family: "Ginchiest";
-  color: #411530;
-  text-shadow: 2px 0px #ecccb2, 3px 0px #411530;
-  font-size: 4vh;
-  position: relative;
-  top: -3vh;
-  left: 3vw;
-}
-
-.link:hover {
-  text-decoration: none;
-  font-family: "Ginchiest";
-  color: #af3614;
-  text-shadow: 2px 0px #ecccb2, 3px 0px #af3614;
-  font-size: 4vh;
-  position: relative;
-  top: -3vh;
-  left: 3vw;
-}
-
-#fe-link {
-  text-decoration: none;
-  font-family: "Ginchiest";
-  color: #411530;
-  text-shadow: 2px 0px #ecccb2, 3px 0px #af3614;
-  font-size: 4vh;
-  position: relative;
-  top: -4.5vh;
-  left: 1.2vw;
-}
-
-#fe-link:hover {
-  text-decoration: none;
-  font-family: "Ginchiest";
-  color: #af3614;
-  text-shadow: 2px 0px #ecccb2, 3px 0px #af3614;
-  font-size: 4vh;
-  position: relative;
-  top: -4.5vh;
-  left: 1.2vw;
-}
-
-.professional-links {
-  position: relative;
-  width: 29vw;
-  height: 42vh;
-  background-color: rgba(255, 255, 255, 0.55);
-  top: 3vh;
-  border-radius: 0.5vw;
-  left: 2vw;
-}
-
-#link-list {
+section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: left;
   list-style: none;
+}
+
+section li {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+section .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
   align-items: left;
-  position: relative;
-  left: -1vw;
+  background-color: #fff;
+  color: #333;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
 }
 
-#horizontal-break-1 {
-  height: 1.5vh;
-  width: 66vw;
-  border-width: 0;
-  background-color: #411530;
-  border-radius: 0.5vw;
-  position: relative;
-  top: 3.5vh;
-}
-
-#gmail-link {
-  text-decoration: none;
-  font-family: "Ginchiest";
-  color: #411530;
-  text-shadow: 2px 0px #ecccb2, 3px 0px #af3614;
-  font-size: 4vh;
-  position: relative;
-  top: -2vh;
-  left: 3vw;
-}
-
-#gmail-link:hover {
-  text-decoration: none;
-  font-family: "Ginchiest";
-  color: #af3614;
-  text-shadow: 2px 0px #ecccb2, 3px 0px #af3614;
-  font-size: 4vh;
-  position: relative;
-  top: -2vh;
-  left: 3vw;
-}
-
-.synopsis-section {
-  position: relative;
-  margin: 0 0 10vh 0;
-  padding: 0 2vw 0 0;
-  width: 85vw;
-  height: 58vh;
-  background-color: rgba(255, 255, 255, 0.55);
-  top: 7.5vh;
-  border-radius: 0.5vw;
-  left: 6vw;
-}
-
-#synopsis {
-  font-family: "Ginchiest";
-  color: #411530;
-  text-shadow: 2px 0px #ecccb2, 3px 0px #af3614;
-  font-size: 4vh;
-  position: relative;
-  top: -3vh;
-  left: 1.2vw;
+#about {
+  width: 60vw;
 }
