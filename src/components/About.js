@@ -13,11 +13,11 @@ const About = () => {
             years of development experience.
           </p>
           <p>
-            The majority of my professional experience has come from Java/SQL
-            backend systems, though I have also worked in Python, C/C++, C#, and
-            JavaScript. With my 4+ years of process engineering experience, I
-            bring a unique perspective and project management approach to my
-            work as a software developer.
+            The majority of my professional development experience has come from
+            Java/SQL backend systems, though I have also worked in Python,
+            C/C++, C#, and JavaScript. With my 4+ years of experience as a
+            semiconductor process engineer, I bring a unique and systematic
+            approach to my work as a software developer.
           </p>
           <p>Please reach out if you have any questions!</p>
         </div>
