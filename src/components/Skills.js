@@ -15,6 +15,7 @@ function Skills() {
           <li>HTML/CSS</li>
           <li>SQL</li>
           <li>EDI/cXML</li>
+          <li>APIs</li>
           <li>Project Management</li>
         </ul>
       </div>

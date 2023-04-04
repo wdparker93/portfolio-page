@@ -98,13 +98,42 @@ section .card {
   flex-direction: row;
   justify-content: left;
   align-items: left;
-  background-color: #fff;
+  background-color: #1a1d21;
   color: #333;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+  width: fit-content;
 }
 
-#about {
-  width: 60vw;
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-description {
+  flex: 3;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 20vw;
+  height: auto;
+  border-radius: 5px;
+}
+
+a:link {
+  color: white; /* Default link color */
+}
+
+a:visited {
+  color: white; /* Link color after it has been visited */
 }

@@ -19,6 +19,11 @@ function Contact() {
               GitHub
             </a>
           </li>
+          <li>
+            <a href="https://github.com/wdparker93/Resume" target="_blank">
+              Resume
+            </a>
+          </li>
         </ul>
       </div>
     </section>
