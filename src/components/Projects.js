@@ -62,7 +62,7 @@ function Projects() {
             Bumper Cars
           </a>
           &nbsp;: Multi-threaded C program that simulates amusement park goers
-          exploring a park and riding bumper cards.
+          exploring a park and riding bumper cars.
         </p>
       </div>
     </section>
