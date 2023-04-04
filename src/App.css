@@ -110,6 +110,7 @@ section .card {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 
 .about-description {
@@ -121,6 +122,12 @@ section .card {
   display: flex;
   justify-content: center;
   padding: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
 }
 
 .about-image img {
