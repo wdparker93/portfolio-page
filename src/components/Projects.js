@@ -17,8 +17,8 @@ function Projects() {
           <a href="https://lda.senate.gov/system/public/" target="_blank">
             US Lobbying Disclosure Act API
           </a>{" "}
-          to summarize the monetary contributions each U.S. senator has received
-          from lobbyists.
+          to summarize aggregate monetary contributions made by lobbyists to
+          U.S. senators.
         </p>
         <p>
           <a
@@ -29,8 +29,8 @@ function Projects() {
           </a>
           &nbsp;: Full-stack, single-page React application licensed and
           developed for a logistics consulting agency that utilizes a Python
-          backend to write custom database profiles to an Excel file and imports
-          predefined profiles from text files.
+          backend servlet to read and write user-generated database
+          configurations to an Excel file.
         </p>
         <p>
           <a href="https://github.com/wdparker93/MovieManager" target="_blank">
@@ -56,16 +56,6 @@ function Projects() {
           </a>
           &nbsp;: Java application emulating the classic game Connect Four in
           which two players compete to connect four tokens.
-        </p>
-        <p>
-          <a
-            href="https://github.com/wdparker93/ServiceManager"
-            target="_blank"
-          >
-            Service Manager
-          </a>
-          &nbsp;: Java application that manages a car service garage's clientele
-          with an adaptable priority queue
         </p>
         <p>
           <a href="https://github.com/wdparker93/BumperCars" target="_blank">
