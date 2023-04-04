@@ -1,24 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio-page/static/css/main.b4ad8e63.css",
-    "main.js": "/portfolio-page/static/js/main.bca17e20.js",
-    "static/media/retro-computer.png": "/portfolio-page/static/media/retro-computer.d825a073fdea1ac304bb.png",
-    "static/media/c-icon.png": "/portfolio-page/static/media/c-icon.de18ff13a9cb546e8849.png",
-    "static/media/fe-languages.png": "/portfolio-page/static/media/fe-languages.0ad71253f7186d3b1ad3.png",
-    "static/media/VintageKing.ttf": "/portfolio-page/static/media/VintageKing.f08cdb457f2bef66ee7d.ttf",
-    "static/media/java-icon.png": "/portfolio-page/static/media/java-icon.595f62e391272323a1a8.png",
-    "static/media/resume-icon.png": "/portfolio-page/static/media/resume-icon.83cb48b882bb6004f9fa.png",
-    "static/media/Ginchiest.ttf": "/portfolio-page/static/media/Ginchiest.52e55deac7c086e9b4fa.ttf",
-    "static/media/GinchiestShadow.ttf": "/portfolio-page/static/media/GinchiestShadow.68cb9f31787158ed581e.ttf",
-    "static/media/github-icon.png": "/portfolio-page/static/media/github-icon.41e563d4571ddc70f25e.png",
-    "static/media/arrow.png": "/portfolio-page/static/media/arrow.a8215bacaeecd0052583.png",
-    "static/media/linked-in-icon.png": "/portfolio-page/static/media/linked-in-icon.62d42acea7e1b700307e.png",
+    "main.css": "/portfolio-page/static/css/main.351fb935.css",
+    "main.js": "/portfolio-page/static/js/main.8d7548b1.js",
+    "static/media/ProfilePicture.jpg": "/portfolio-page/static/media/ProfilePicture.eae7b014875ae480c4f6.jpg",
     "index.html": "/portfolio-page/index.html",
-    "main.b4ad8e63.css.map": "/portfolio-page/static/css/main.b4ad8e63.css.map",
-    "main.bca17e20.js.map": "/portfolio-page/static/js/main.bca17e20.js.map"
+    "main.351fb935.css.map": "/portfolio-page/static/css/main.351fb935.css.map",
+    "main.8d7548b1.js.map": "/portfolio-page/static/js/main.8d7548b1.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4ad8e63.css",
-    "static/js/main.bca17e20.js"
+    "static/css/main.351fb935.css",
+    "static/js/main.8d7548b1.js"
   ]
 }
