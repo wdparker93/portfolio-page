@@ -123,18 +123,33 @@ section .card {
   justify-content: center;
   padding: 4rem;
 }
-
-@media screen and (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-  }
-}
-
 .about-image img {
   width: 100%;
   max-width: 20vw;
   height: auto;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-image img {
+    width: auto;
+    max-width: 60vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .about-image img {
+    width: auto;
+    max-width: 40vw;
+  }
 }
 
 a:link {
