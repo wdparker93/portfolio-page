@@ -33,7 +33,7 @@ function Projects() {
           configurations to an Excel file.
         </p>
         <p>
-          <a href="https://github.com/wdparker93/MovieManager" target="_blank">
+          <a href="https://github.com/wdparker93/wdparker93" target="_blank">
             Movie Manager
           </a>
           &nbsp;: Java application that generates rankings of movies based on
@@ -41,10 +41,7 @@ function Projects() {
           and list abstract data types
         </p>
         <p>
-          <a
-            href="https://github.com/wdparker93/ServiceManager"
-            target="_blank"
-          >
+          <a href="https://github.com/wdparker93/wdparker93" target="_blank">
             Service Manager
           </a>
           &nbsp;: Java application that manages a car service garage's clientele
