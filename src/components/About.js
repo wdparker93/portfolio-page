@@ -11,15 +11,15 @@ const About = () => {
             Hello, and welcome to my portfolio page! My name is Will Parker.
           </p>
           <p>
-            I'm a former process engineer turned software developer with 1+
-            years of development experience.
+            I'm a former process engineer turned software developer with 3+
+            years of professional development experience.
           </p>
           <p>
-            The majority of my professional development experience has come from
-            Java/SQL backend systems, though I have also worked in Python,
-            C/C++, C#, and JavaScript. With my 4+ years of experience as a
-            semiconductor process engineer, I bring a unique and systematic
-            approach to my work as a software developer.
+            I'm a lead C# .NET developer specializing in ERP integrations and
+            AI agent systems. My background spans Java/SQL backend development,
+            Python, C#, and cloud infrastructure on Google Cloud and Azure. With
+            4+ years as a semiconductor process engineer before that, I bring a
+            systematic, analytical mindset to software problems.
           </p>
           <p>Please reach out if you have any questions!</p>
         </div>

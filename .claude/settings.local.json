@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"M:\\\\VsCodeRepos\\\\portfolio-page\" remote get-url origin)",
+      "Bash(git -C \"M:\\\\VsCodeRepos\\\\portfolio-page\" remote -v)"
+    ]
+  }
+}

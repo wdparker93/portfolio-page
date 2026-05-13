@@ -7,6 +7,33 @@ function Projects() {
         <h2>Projects</h2>
         <p>
           <a
+            href="https://github.com/wdparker93/spotify-youtube-connector"
+            target="_blank"
+          >
+            Spotify YouTube Connector
+          </a>
+          &nbsp;(
+          <a
+            href="https://wdparker93.github.io/spotify-youtube-connector-site/"
+            target="_blank"
+          >
+            site
+          </a>
+          )&nbsp;: Python application that syncs a Spotify playlist to a YouTube
+          playlist using the Spotify and YouTube Data APIs.
+        </p>
+        <p>
+          <a
+            href="https://github.com/wdparker93/portfolio-page"
+            target="_blank"
+          >
+            Portfolio Page
+          </a>
+          &nbsp;: Personal portfolio site built with React showcasing projects
+          and professional experience. You're looking at it!
+        </p>
+        <p>
+          <a
             href="https://github.com/wdparker93/lobbyist-donation-tracker"
             target="_blank"
           >
@@ -31,21 +58,6 @@ function Projects() {
           developed for a logistics consulting agency that utilizes a Python
           backend servlet to read and write user-generated database
           configurations to an Excel file.
-        </p>
-        <p>
-          <a href="https://github.com/wdparker93/wdparker93" target="_blank">
-            Movie Manager
-          </a>
-          &nbsp;: Java application that generates rankings of movies based on
-          user-entered criteria and leverages custom implementations of the map
-          and list abstract data types
-        </p>
-        <p>
-          <a href="https://github.com/wdparker93/wdparker93" target="_blank">
-            Service Manager
-          </a>
-          &nbsp;: Java application that manages a car service garage's clientele
-          with an adaptable priority queue
         </p>
         <p>
           <a href="https://github.com/wdparker93/Connect4" target="_blank">

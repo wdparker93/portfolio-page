@@ -20,7 +20,7 @@ function Contact() {
             </a>
           </li>
           <li>
-            <a href="https://github.com/wdparker93/wdparker93" target="_blank">
+            <a href="/resume.html" target="_blank">
               Resume
             </a>
           </li>

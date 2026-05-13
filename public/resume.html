@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume – William D. Parker</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 10.2pt;
+      color: #000;
+      background: #fff;
+      padding: 0.55in 0.65in;
+      max-width: 8.5in;
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    .header { text-align: center; margin-bottom: 4px; }
+    .header h1 { font-size: 17pt; font-variant: small-caps; letter-spacing: 0.04em; }
+    .header .subtitle { font-size: 11pt; font-variant: small-caps; letter-spacing: 0.06em; }
+    .header .contact { font-size: 9.5pt; margin-top: 2px; }
+    .header .contact a { color: #000; text-decoration: none; }
+    hr { border: none; border-top: 1px solid #000; margin: 5px 0 6px; }
+
+    /* ── Section table ── */
+    table { width: 100%; border-collapse: collapse; }
+    td.label {
+      font-variant: small-caps;
+      font-size: 10pt;
+      letter-spacing: 0.04em;
+      vertical-align: top;
+      white-space: nowrap;
+      padding-right: 14px;
+      padding-bottom: 7px;
+      width: 90px;
+    }
+    td.content { vertical-align: top; padding-bottom: 7px; }
+
+    /* ── Experience ── */
+    .employer { font-weight: bold; }
+    .team { font-weight: bold; margin-top: 4px; }
+    .role-line { font-style: normal; margin-bottom: 2px; }
+    ul { margin: 2px 0 0 14px; }
+    ul li { margin-bottom: 1.5px; line-height: 1.35; }
+
+    /* ── Projects ── */
+    .project-item { margin-bottom: 2px; line-height: 1.35; }
+    .project-item a { color: #000; }
+
+    /* ── Education ── */
+    .edu-entry { margin-bottom: 3px; }
+    .edu-entry .degree { font-weight: bold; }
+
+    @media print {
+      body { padding: 0.45in 0.6in; }
+      @page { margin: 0; size: letter; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>William D. Parker</h1>
+  <div class="subtitle">Software Engineer</div>
+  <div class="contact">
+    <a href="https://www.linkedin.com/in/william-parker-215877aa/" target="_blank">LinkedIn</a>
+    &nbsp;|&nbsp; wdparker93@gmail.com &nbsp;|&nbsp; 256-590-8692
+  </div>
+</div>
+
+<hr />
+
+<table>
+  <tr>
+    <td class="label">Summary</td>
+    <td class="content">
+      Lead C# .NET developer with expertise in building applications, ERP integrations, and AI agent systems. Former semiconductor process engineer with strong systems analysis skills, focused on software development in remote or hybrid roles in Atlanta, GA.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="label">Skills</td>
+    <td class="content">
+      C#, SQL, AI-Assisted Development, PowerShell, Azure DevOps, Python, Java, Google Cloud, APIs, EDI/cXML
+    </td>
+  </tr>
+
+  <tr>
+    <td class="label">Certification</td>
+    <td class="content">
+      Google Cloud Certified Associate Cloud Engineer, October 2024 – October 2027
+    </td>
+  </tr>
+
+  <tr>
+    <td class="label">Experience</td>
+    <td class="content">
+      <span class="employer">Motion Industries, Birmingham, AL, February 2022 – Present</span>
+
+      <div class="team">Prophet 21 Team</div>
+      <div class="role-line">Software Engineer I&nbsp;: December 2023&nbsp;&nbsp;&nbsp;Software Engineer II&nbsp;: December 2024</div>
+      <ul>
+        <li>Built multi-agent AI system automating new engineer onboarding and feature development, using a developer-simulating agent and an adversarial application agent that generates validation friction.</li>
+        <li>Developed a RAG knowledge base agent on compiled Confluence and Prophet 21 documentation, enabling Q&amp;A and troubleshooting assistance.</li>
+        <li>Designed and implemented a fully automated deployment and release cadence using ADO pipelines, with automated release reminder emails and compliance requirements.</li>
+        <li>Implemented time tracking integration between Prophet 21 and Microsoft D365, troubleshooting and extending Google Cloud connective tissue between the systems.</li>
+        <li>Engineered from-scratch EDI integration with Prophet 21 using PowerShell file transfer scripts and ETL .NET console application.</li>
+        <li>Designed and built custom PeopleSoft integration using Prophet 21 APIs and C# to automate and migrate AR/AP financial processes.</li>
+        <li>Developed reusable .NET Framework library accelerating Prophet 21 C# business rule development.</li>
+        <li>Implemented and unit tested numerous backend and full-stack ERP enhancements in C#, achieving 80%+ coverage in compliance with organizational policy.</li>
+        <li>Authored Azure DevOps pipelines to automate unit tests, enforce coverage requirements with SonarQube, and deploy ERP integrations and enhancements.</li>
+        <li>Developed event-based C# enhancement posting to Google Cloud Pub/Sub; monitored GCP logs and buckets to ensure application performance.</li>
+        <li>Acted as primary technical contact for cross-team Prophet 21 integrations, advising on APIs and ERP architecture.</li>
+      </ul>
+
+      <div class="team">eBusiness Team</div>
+      <div class="role-line">Software Developer Trainee&nbsp;: February 2022&nbsp;&nbsp;&nbsp;Associate Software Developer&nbsp;: February 2023</div>
+      <ul>
+        <li>Partnered with analysts to gather requirements and deliver Java code updates enabling EDI processing.</li>
+        <li>Automated recurring reporting for stakeholders using Python, Java, and SQL.</li>
+        <li>Refactored backend Java application to decouple modules and simplify unit testing.</li>
+        <li>Led team as technical owner of OCR application automating invoice and order PDF ingestion; delivered proof-of-concept that reduced onboarding overhead for new customers.</li>
+        <li>Converted legacy Visual Basic code to C# to remediate security vulnerabilities.</li>
+      </ul>
+
+      <div class="team" style="margin-top:5px;">CreeLED Inc., Durham, NC, July 2017 – January 2022</div>
+      <div class="role-line">R&amp;D Semiconductor Process Engineer I / II</div>
+      <ul>
+        <li>Researched, improved, and automated semiconductor production processes.</li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="label">Projects</td>
+    <td class="content">
+      <div class="project-item">
+        <a href="https://github.com/wdparker93/spotify-youtube-connector" target="_blank"><strong>Spotify YouTube Connector</strong></a>
+        &nbsp;(<a href="https://wdparker93.github.io/spotify-youtube-connector-site/" target="_blank">site</a>)
+        &nbsp;– Python application that syncs a Spotify playlist to a YouTube playlist using the Spotify and YouTube Data APIs.
+      </div>
+      <div class="project-item">
+        <a href="https://github.com/wdparker93/portfolio-page" target="_blank"><strong>Portfolio Page</strong></a>
+        &nbsp;– Personal portfolio site built with React showcasing projects and professional experience.
+      </div>
+      <div class="project-item">
+        <a href="https://github.com/wdparker93/lobbyist-donation-tracker" target="_blank"><strong>Lobbyist Donation Tracker</strong></a>
+        &nbsp;– Full-stack React + MySQL app leveraging the US Lobbying Disclosure Act API to summarize lobbyist contributions to U.S. senators.
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="label">Education</td>
+    <td class="content">
+      <div class="edu-entry">
+        <span class="degree">Computer Programming Certificate, August 2021</span><br />
+        North Carolina State University, Raleigh, NC
+      </div>
+      <div class="edu-entry">
+        <span class="degree">Bachelor of Science in Chemical Engineering, May 2017</span><br />
+        The University of Alabama, Tuscaloosa, AL
+      </div>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
