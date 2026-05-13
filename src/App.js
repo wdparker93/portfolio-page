@@ -8,25 +8,17 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1>Software Developer</h1>
-        <nav>
+      <nav>
+        <div className="nav-inner">
+          <span className="nav-brand">Will Parker</span>
           <ul>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-        </nav>
-      </header>
+        </div>
+      </nav>
       <main>
         <About />
         <Skills />

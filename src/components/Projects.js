@@ -1,83 +1,82 @@
 import React from "react";
 
+const projects = [
+  {
+    name: "Spotify YouTube Connector",
+    repo: "https://github.com/wdparker93/spotify-youtube-connector",
+    site: "https://wdparker93.github.io/spotify-youtube-connector-site/",
+    description:
+      "Python application that syncs a Spotify playlist to a YouTube playlist using the Spotify and YouTube Data APIs.",
+  },
+  {
+    name: "Portfolio Page",
+    repo: "https://github.com/wdparker93/portfolio-page",
+    description: "This site — a personal portfolio built with React and deployed via GitHub Actions.",
+  },
+  {
+    name: "Lobbyist Donation Tracker",
+    repo: "https://github.com/wdparker93/lobbyist-donation-tracker",
+    description:
+      "Full-stack React + MySQL application that leverages the US Lobbying Disclosure Act API to summarize aggregate contributions made by lobbyists to U.S. senators.",
+  },
+  {
+    name: "Data Request Builder",
+    repo: "https://github.com/wdparker93/data-request-builder",
+    description:
+      "Full-stack React application licensed and developed for a logistics consulting agency. Uses a Python backend to read and write user-generated database configurations to Excel.",
+  },
+  {
+    name: "Connect4",
+    repo: "https://github.com/wdparker93/Connect4",
+    description:
+      "Java application emulating Connect Four in which two players compete to connect four tokens.",
+  },
+  {
+    name: "Bumper Cars",
+    repo: "https://github.com/wdparker93/BumperCars",
+    description:
+      "Multi-threaded C program that simulates amusement park goers exploring a park and riding bumper cars.",
+  },
+];
+
 function Projects() {
   return (
     <section id="projects">
-      <div className="container">
-        <h2>Projects</h2>
-        <p>
-          <a
-            href="https://github.com/wdparker93/spotify-youtube-connector"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Spotify YouTube Connector
-          </a>
-          &nbsp;(
-          <a
-            href="https://wdparker93.github.io/spotify-youtube-connector-site/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            site
-          </a>
-          )&nbsp;: Python application that syncs a Spotify playlist to a YouTube
-          playlist using the Spotify and YouTube Data APIs.
-        </p>
-        <p>
-          <a
-            href="https://github.com/wdparker93/portfolio-page"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Portfolio Page
-          </a>
-          &nbsp;: Personal portfolio site built with React showcasing projects
-          and professional experience. You're looking at it!
-        </p>
-        <p>
-          <a
-            href="https://github.com/wdparker93/lobbyist-donation-tracker"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Lobbyist Donation Tracker
-          </a>
-          &nbsp;: Full-stack, single-page React application built on a MySQL
-          database that leverages Lobbying Disclosure data from the{" "}
-          <a href="https://lda.senate.gov/system/public/" target="_blank" rel="noreferrer">
-            US Lobbying Disclosure Act API
-          </a>{" "}
-          to summarize aggregate monetary contributions made by lobbyists to
-          U.S. senators.
-        </p>
-        <p>
-          <a
-            href="https://github.com/wdparker93/data-request-builder"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Data Request Builder
-          </a>
-          &nbsp;: Full-stack, single-page React application licensed and
-          developed for a logistics consulting agency that utilizes a Python
-          backend servlet to read and write user-generated database
-          configurations to an Excel file.
-        </p>
-        <p>
-          <a href="https://github.com/wdparker93/Connect4" target="_blank" rel="noreferrer">
-            Connect4
-          </a>
-          &nbsp;: Java application emulating the classic game Connect Four in
-          which two players compete to connect four tokens.
-        </p>
-        <p>
-          <a href="https://github.com/wdparker93/BumperCars" target="_blank" rel="noreferrer">
-            Bumper Cars
-          </a>
-          &nbsp;: Multi-threaded C program that simulates amusement park goers
-          exploring a park and riding bumper cars.
-        </p>
+      <h2>Projects</h2>
+      <div className="projects-list">
+        {projects.map((p) => (
+          <div key={p.name} className="project-card">
+            <div className="project-card-header">
+              <a
+                href={p.repo}
+                target="_blank"
+                rel="noreferrer"
+                className="project-title"
+              >
+                {p.name}
+              </a>
+              <a
+                href={p.repo}
+                target="_blank"
+                rel="noreferrer"
+                className="project-pill"
+              >
+                repo ↗
+              </a>
+              {p.site && (
+                <a
+                  href={p.site}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="project-pill"
+                >
+                  site ↗
+                </a>
+              )}
+            </div>
+            <p>{p.description}</p>
+          </div>
+        ))}
       </div>
     </section>
   );

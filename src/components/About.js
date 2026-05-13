@@ -4,24 +4,27 @@ import ProfilePicture from "../images/ProfilePicture.jpg";
 const About = () => {
   return (
     <section id="about">
+      <h2>About</h2>
       <div className="about-container">
         <div className="about-description">
-          <h2>About Me</h2>
-          <p>
-            Hello, and welcome to my portfolio page! My name is Will Parker.
+          <p className="lead">
+            Hi, I'm Will — a Software Engineer at Motion Industries in Birmingham, AL.
           </p>
           <p>
-            I'm a former process engineer turned software developer with 3+
-            years of professional development experience.
+            I work on the Prophet 21 ERP platform in C# and SQL, building integrations
+            with external systems like PeopleSoft, Microsoft D365, and Google Cloud, as
+            well as backend and full-stack ERP enhancements. Recently I've been focused
+            on AI tooling — I built a multi-agent system to automate parts of the
+            engineering workflow and a RAG knowledge base agent on top of our internal
+            documentation.
           </p>
           <p>
-            I'm a lead C# .NET developer specializing in ERP integrations and
-            AI agent systems. My background spans Java/SQL backend development,
-            Python, C#, and cloud infrastructure on Google Cloud and Azure. With
-            4+ years as a semiconductor process engineer before that, I bring a
-            systematic, analytical mindset to software problems.
+            I'm a Google Cloud Certified Associate Cloud Engineer and have worked across
+            Azure DevOps, GCP Pub/Sub, Python, Java, and PowerShell throughout my career.
+            Before software I spent four years as an R&amp;D semiconductor process
+            engineer, which shaped how I approach complex systems analytically.
           </p>
-          <p>Please reach out if you have any questions!</p>
+          <p>Feel free to reach out — I'm always happy to connect.</p>
         </div>
         <div className="about-image">
           <img src={ProfilePicture} alt="Will Parker" />
