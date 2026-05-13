@@ -24,7 +24,7 @@ const About = () => {
           <p>Please reach out if you have any questions!</p>
         </div>
         <div className="about-image">
-          <img src={ProfilePicture} alt="My Image" />
+          <img src={ProfilePicture} alt="Will Parker" />
         </div>
       </div>
     </section>

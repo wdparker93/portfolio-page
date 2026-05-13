@@ -9,6 +9,7 @@ function Projects() {
           <a
             href="https://github.com/wdparker93/spotify-youtube-connector"
             target="_blank"
+            rel="noreferrer"
           >
             Spotify YouTube Connector
           </a>
@@ -16,6 +17,7 @@ function Projects() {
           <a
             href="https://wdparker93.github.io/spotify-youtube-connector-site/"
             target="_blank"
+            rel="noreferrer"
           >
             site
           </a>
@@ -26,6 +28,7 @@ function Projects() {
           <a
             href="https://github.com/wdparker93/portfolio-page"
             target="_blank"
+            rel="noreferrer"
           >
             Portfolio Page
           </a>
@@ -36,12 +39,13 @@ function Projects() {
           <a
             href="https://github.com/wdparker93/lobbyist-donation-tracker"
             target="_blank"
+            rel="noreferrer"
           >
             Lobbyist Donation Tracker
           </a>
           &nbsp;: Full-stack, single-page React application built on a MySQL
           database that leverages Lobbying Disclosure data from the{" "}
-          <a href="https://lda.senate.gov/system/public/" target="_blank">
+          <a href="https://lda.senate.gov/system/public/" target="_blank" rel="noreferrer">
             US Lobbying Disclosure Act API
           </a>{" "}
           to summarize aggregate monetary contributions made by lobbyists to
@@ -51,6 +55,7 @@ function Projects() {
           <a
             href="https://github.com/wdparker93/data-request-builder"
             target="_blank"
+            rel="noreferrer"
           >
             Data Request Builder
           </a>
@@ -60,14 +65,14 @@ function Projects() {
           configurations to an Excel file.
         </p>
         <p>
-          <a href="https://github.com/wdparker93/Connect4" target="_blank">
+          <a href="https://github.com/wdparker93/Connect4" target="_blank" rel="noreferrer">
             Connect4
           </a>
           &nbsp;: Java application emulating the classic game Connect Four in
           which two players compete to connect four tokens.
         </p>
         <p>
-          <a href="https://github.com/wdparker93/BumperCars" target="_blank">
+          <a href="https://github.com/wdparker93/BumperCars" target="_blank" rel="noreferrer">
             Bumper Cars
           </a>
           &nbsp;: Multi-threaded C program that simulates amusement park goers

@@ -10,17 +10,18 @@ function Contact() {
             <a
               href="https://www.linkedin.com/in/william-parker-215877aa/"
               target="_blank"
+              rel="noreferrer"
             >
               LinkedIn
             </a>
           </li>
           <li>
-            <a href="https://github.com/wdparker93" target="_blank">
+            <a href="https://github.com/wdparker93" target="_blank" rel="noreferrer">
               GitHub
             </a>
           </li>
           <li>
-            <a href="/resume.html" target="_blank">
+            <a href="/resume.html" target="_blank" rel="noreferrer">
               Resume
             </a>
           </li>
