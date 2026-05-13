@@ -5,7 +5,11 @@
       "Bash(git -C \"M:\\\\VsCodeRepos\\\\portfolio-page\" remote -v)",
       "Bash(npm run *)",
       "Bash(npm install *)",
-      "Bash(Copy-Item *)"
+      "Bash(Copy-Item *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(git check-ignore *)"
     ]
   }
 }
