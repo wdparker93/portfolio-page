@@ -9,6 +9,13 @@ const projects = [
       "Python application that syncs a Spotify playlist to a YouTube playlist using the Spotify and YouTube Data APIs.",
   },
   {
+    name: "Improv Helper",
+    repo: "https://github.com/wdparker93/improvisation-helper",
+    site: "https://wdparker93.github.io/improvisation-helper-site/",
+    description:
+      "Windows desktop application that listens to a MIDI keyboard and automatically captures improvised musical phrases as MIDI files.",
+  },
+  {
     name: "Portfolio Page",
     repo: "https://github.com/wdparker93/portfolio-page",
     description: "This site — a personal portfolio built with React and deployed via GitHub Actions.",
