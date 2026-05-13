@@ -20,12 +20,6 @@ const projects = [
       "Full-stack React + MySQL application that leverages the US Lobbying Disclosure Act API to summarize aggregate contributions made by lobbyists to U.S. senators.",
   },
   {
-    name: "Data Request Builder",
-    repo: "https://github.com/wdparker93/data-request-builder",
-    description:
-      "Full-stack React application licensed and developed for a logistics consulting agency. Uses a Python backend to read and write user-generated database configurations to Excel.",
-  },
-  {
     name: "Connect4",
     repo: "https://github.com/wdparker93/Connect4",
     description:
