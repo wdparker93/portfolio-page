@@ -4,7 +4,8 @@
       "Bash(git -C \"M:\\\\VsCodeRepos\\\\portfolio-page\" remote get-url origin)",
       "Bash(git -C \"M:\\\\VsCodeRepos\\\\portfolio-page\" remote -v)",
       "Bash(npm run *)",
-      "Bash(npm install *)"
+      "Bash(npm install *)",
+      "Bash(Copy-Item *)"
     ]
   }
 }
