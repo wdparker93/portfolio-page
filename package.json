@@ -15,8 +15,6 @@
   },
   "homepage": "https://wdparker93.github.io/portfolio-page/",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
