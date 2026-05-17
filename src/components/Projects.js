@@ -6,7 +6,7 @@ const projects = [
     repo: "https://github.com/wdparker93/spotify-youtube-connector",
     site: "https://wdparker93.github.io/spotify-youtube-connector-site/",
     description:
-      "Chrome extension with a Windows companion app that automatically opens and syncs YouTube music videos to whatever is playing in the Spotify desktop app — no Spotify Premium required.",
+      "Chrome extension with a Windows companion app that automatically finds and opens the YouTube music video for whatever is playing in the Spotify desktop app — no Spotify Premium required.",
   },
   {
     name: "Improv Helper",
