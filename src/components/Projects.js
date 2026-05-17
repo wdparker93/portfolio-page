@@ -6,7 +6,7 @@ const projects = [
     repo: "https://github.com/wdparker93/spotify-youtube-connector",
     site: "https://wdparker93.github.io/spotify-youtube-connector-site/",
     description:
-      "Python application that syncs a Spotify playlist to a YouTube playlist using the Spotify and YouTube Data APIs.",
+      "Chrome extension with a Windows companion app that automatically opens and syncs YouTube music videos to whatever is playing in the Spotify desktop app — no Spotify Premium required.",
   },
   {
     name: "Improv Helper",
