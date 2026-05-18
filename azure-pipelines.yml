@@ -1,0 +1,173 @@
+# Portfolio Auto-Update Pipeline
+#
+# Triggered by:  Pushes to wdparker93/spotify-youtube-connector (main)
+#                Pushes to wdparker93/improvisation-helper (main)
+#
+# What it does:  Passes the latest commit diff to Claude Code, which decides
+#                whether the change is meaningful enough to surface and updates
+#                src/components/Projects.js and public/resume.html accordingly.
+#
+# Required ADO secrets (pipeline variables, marked secret):
+#   ANTHROPIC_API_KEY        — Anthropic API key for Claude Code
+#
+# Required ADO service connection:
+#   GitHubServiceConnection  — GitHub OAuth/PAT connection with read access to
+#                              the two project repos and write access to this repo
+
+trigger: none   # Fired only via resource triggers below
+
+resources:
+  repositories:
+    - repository: groovevision
+      type: github
+      name: wdparker93/spotify-youtube-connector
+      endpoint: GitHubServiceConnection
+      trigger:
+        branches:
+          include:
+            - main
+
+    - repository: improvhelper
+      type: github
+      name: wdparker93/improvisation-helper
+      endpoint: GitHubServiceConnection
+      trigger:
+        branches:
+          include:
+            - main
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  PORTFOLIO_BRANCH: master
+
+steps:
+
+  # ── Checkouts ─────────────────────────────────────────────────────────────────
+
+  - checkout: self
+    displayName: Checkout portfolio-page
+    path: portfolio-page
+    persistCredentials: true   # lets the final push step use the service connection token
+    fetchDepth: 1
+
+  - checkout: groovevision
+    displayName: Checkout spotify-youtube-connector
+    path: groovevision
+    fetchDepth: 5
+
+  - checkout: improvhelper
+    displayName: Checkout improvisation-helper
+    path: improvhelper
+    fetchDepth: 5
+
+  # ── Build change context ───────────────────────────────────────────────────────
+  # Writes a diff of the latest commit in the triggering repo to
+  # portfolio-page/.pipeline-context/recent-changes.diff so Claude can read it.
+
+  - bash: |
+      set -euo pipefail
+
+      ALIAS="${TRIGGERING_ALIAS:-manual}"
+      echo "Pipeline triggered by: $ALIAS"
+
+      # Map alias → repo path + display name
+      case "$ALIAS" in
+        groovevision)
+          REPO_PATH="$(Pipeline.Workspace)/groovevision"
+          DISPLAY_NAME="GrooveVision (spotify-youtube-connector)"
+          ;;
+        improvhelper)
+          REPO_PATH="$(Pipeline.Workspace)/improvhelper"
+          DISPLAY_NAME="Improv Helper (improvisation-helper)"
+          ;;
+        *)
+          REPO_PATH="both"
+          DISPLAY_NAME="all watched projects (manual trigger)"
+          ;;
+      esac
+
+      echo "##vso[task.setvariable variable=CHANGED_PROJECT]$DISPLAY_NAME"
+
+      CONTEXT_OUT="$(Pipeline.Workspace)/portfolio-page/.pipeline-context/recent-changes.diff"
+      mkdir -p "$(dirname "$CONTEXT_OUT")"
+      : > "$CONTEXT_OUT"
+
+      write_diff() {
+        local dir="$1" label="$2"
+        {
+          echo "=== $label — recent commits ==="
+          git -C "$dir" log --oneline -5
+          echo ""
+          echo "=== $label — diff of latest commit ==="
+          git -C "$dir" diff HEAD~1 HEAD \
+            -- . \
+            ':(exclude)*.lock' \
+            ':(exclude)package-lock.json' \
+            ':(exclude)*.zip' \
+            ':(exclude)*.png' ':(exclude)*.jpg' ':(exclude)*.ico' \
+            ':(exclude)*.gif' ':(exclude)*.ttf' ':(exclude)*.woff' ':(exclude)*.woff2' \
+            2>/dev/null || true
+          echo ""
+        } >> "$CONTEXT_OUT"
+      }
+
+      if [ "$REPO_PATH" = "both" ]; then
+        write_diff "$(Pipeline.Workspace)/groovevision" "spotify-youtube-connector"
+        write_diff "$(Pipeline.Workspace)/improvhelper"  "improvisation-helper"
+      else
+        write_diff "$REPO_PATH" "$DISPLAY_NAME"
+      fi
+
+      echo "--- Context file preview (first 80 lines) ---"
+      head -80 "$CONTEXT_OUT"
+    displayName: Build change context
+    env:
+      TRIGGERING_ALIAS: $(resources.triggeringAlias)
+
+  # ── Install Node + Claude Code ─────────────────────────────────────────────────
+
+  - task: NodeTool@0
+    displayName: Use Node 20
+    inputs:
+      versionSpec: '20.x'
+
+  - script: npm install -g @anthropic-ai/claude-code
+    displayName: Install Claude Code CLI
+
+  # ── Run Claude Code ────────────────────────────────────────────────────────────
+  # Claude reads CLAUDE.md for standing instructions and
+  # .pipeline-context/recent-changes.diff for the actual change to evaluate.
+
+  - bash: |
+      cd "$(Pipeline.Workspace)/portfolio-page"
+      claude -p \
+        'Read CLAUDE.md for your instructions. The recent project changes to evaluate are in .pipeline-context/recent-changes.diff. Follow the instructions exactly, then run bash -c "git diff --stat" to show what changed.' \
+        --allowedTools 'Read,Glob,Grep,Edit,Bash'
+    displayName: Run Claude Code portfolio update
+    env:
+      ANTHROPIC_API_KEY: $(ANTHROPIC_API_KEY)
+
+  # ── Commit and push ────────────────────────────────────────────────────────────
+
+  - bash: |
+      cd "$(Pipeline.Workspace)/portfolio-page"
+
+      git config user.email "pipeline@catniplabs.com"
+      git config user.name "Portfolio Update Pipeline"
+
+      # Stage only the two files Claude is permitted to touch
+      git add src/components/Projects.js public/resume.html
+
+      if git diff --staged --quiet; then
+        echo "No meaningful portfolio changes detected — skipping commit."
+        exit 0
+      fi
+
+      git commit -m "chore(portfolio): auto-update descriptions for ${CHANGED_PROJECT}"
+      git push origin $(PORTFOLIO_BRANCH)
+      echo "Portfolio updated and pushed."
+    displayName: Commit and push portfolio changes
+    env:
+      CHANGED_PROJECT: $(CHANGED_PROJECT)

@@ -24,3 +24,6 @@ yarn-error.log*
 
 # Claude Code
 .claude/settings.local.json
+
+# ADO pipeline context (temp diffs written at pipeline runtime, never committed)
+.pipeline-context/
