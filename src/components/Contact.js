@@ -4,6 +4,10 @@ function Contact() {
   return (
     <section id="contact">
       <h2>Contact</h2>
+      <p className="agent-blurb">
+        Have a question about my work experience? Email me with <strong>[AGENT]</strong> in the
+        subject line and an AI agent will reply with an answer.
+      </p>
       <div className="contact-links">
         <a
           href="https://www.linkedin.com/in/william-parker-215877aa/"
