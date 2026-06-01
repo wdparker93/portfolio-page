@@ -6,7 +6,7 @@ function Contact() {
       <h2>Contact</h2>
       <p className="agent-blurb">
         Have a question about my work experience? Email me with <strong>[AGENT]</strong> in the
-        subject line and an AI agent will reply with an answer.
+        subject line and an AI agent will reply within 8 hours.
       </p>
       <div className="contact-links">
         <a
