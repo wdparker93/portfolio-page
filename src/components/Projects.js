@@ -25,7 +25,7 @@ const projects = [
     repo: "https://github.com/wdparker93/lobbyist-donation-tracker",
     site: "https://wdparker93.github.io/lobbyist-donation-tracker/",
     description:
-      "React SPA that automatically syncs U.S. Senate lobbying disclosure filings and visualizes aggregate contributions made by lobbyists to each senator, with weekly data updates via GitHub Actions.",
+      "React SPA tracking money flowing to U.S. senators from two sources: Senate LDA lobbying disclosures and FEC PAC/party contributions. Data syncs automatically each week via GitHub Actions with a 5-year lookback window.",
   },
   {
     name: "Connect4",
