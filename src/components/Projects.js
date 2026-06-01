@@ -23,8 +23,9 @@ const projects = [
   {
     name: "Lobbyist Donation Tracker",
     repo: "https://github.com/wdparker93/lobbyist-donation-tracker",
+    site: "https://wdparker93.github.io/lobbyist-donation-tracker/",
     description:
-      "Full-stack React + MySQL application that leverages the US Lobbying Disclosure Act API to summarize aggregate contributions made by lobbyists to U.S. senators.",
+      "React SPA that automatically syncs U.S. Senate lobbying disclosure filings and visualizes aggregate contributions made by lobbyists to each senator, with weekly data updates via GitHub Actions.",
   },
   {
     name: "Connect4",
