@@ -8,21 +8,22 @@ const About = () => {
       <div className="about-container">
         <div className="about-description">
           <p className="lead">
-            Hi, I'm Will — a Software Engineer at Motion Industries in Atlanta, GA.
+            Hi, I'm Will — a Software Engineer at Motion Industries in Birmingham, AL.
           </p>
           <p>
-            I work on the Prophet 21 ERP platform in C# and SQL, building integrations
-            with external systems like PeopleSoft, Microsoft D365, and Google Cloud, as
-            well as backend and full-stack ERP enhancements. Recently I've been focused
-            on AI tooling — I built a multi-agent system to automate parts of the
-            engineering workflow and a RAG knowledge base agent on top of our internal
-            documentation.
+            I joined as the first engineer dedicated to Prophet 21 ERP development and
+            built the team's software ecosystem from the ground up — version control,
+            CI/CD pipelines, reusable libraries, and integrations across PeopleSoft,
+            Microsoft D365, and Google Cloud. More recently I've been building AI
+            tooling: a multi-agent system that automates backlog analysis and code
+            authoring from ADO tickets, and a RAG knowledge base agent over our internal
+            Confluence and ERP documentation.
           </p>
           <p>
             I'm a Google Cloud Certified Associate Cloud Engineer and have worked across
-            Azure DevOps, GCP Pub/Sub, Python, Java, and PowerShell throughout my career.
-            Before software I spent four years as an R&amp;D semiconductor process
-            engineer, which shaped how I approach complex systems analytically.
+            C#/.NET, Azure DevOps, Python, Java, and PowerShell. Before software I spent
+            four years as an R&amp;D semiconductor process engineer, which shapes how I
+            approach complex systems analytically.
           </p>
           <p>Feel free to reach out — I'm always happy to connect.</p>
         </div>

@@ -1,7 +1,7 @@
 import React from "react";
 
 const primary = [
-  "C#", "SQL", "Azure DevOps", "Google Cloud", "AI-Assisted Development",
+  "C#", "SQL", "Azure DevOps", "Google Cloud", "Multi-Agent AI / RAG", "CI/CD Architecture",
 ];
 
 const secondary = [

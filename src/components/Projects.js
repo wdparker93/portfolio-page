@@ -9,11 +9,10 @@ const projects = [
       "Chrome extension with a Windows companion app that automatically finds and opens the YouTube music video for whatever is playing in the Spotify desktop app — no Spotify Premium required.",
   },
   {
-    name: "Improv Helper",
-    repo: "https://github.com/wdparker93/improvisation-helper",
-    site: "https://wdparker93.github.io/improvisation-helper-site/",
+    name: "Steam Review Miner",
+    repo: "https://github.com/wdparker93/steam-review-miner",
     description:
-      "Windows desktop application that listens to a MIDI keyboard and automatically captures improvised musical phrases as MIDI files.",
+      "FastAPI and React web app that analyzes Steam game reviews via keyword tagging, phrase extraction, and sentiment timelines.",
   },
   {
     name: "Portfolio Page",
