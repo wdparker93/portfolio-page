@@ -8,7 +8,7 @@ const About = () => {
       <div className="about-container">
         <div className="about-description">
           <p className="lead">
-            Hi, I'm Will — a Software Engineer at Motion Industries in Birmingham, AL.
+            Hi, I'm Will — a Software Engineer at Motion Industries in Atlanta, GA.
           </p>
           <p>
             I joined as the first engineer dedicated to Prophet 21 ERP development and
