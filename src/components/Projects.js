@@ -9,11 +9,11 @@ const projects = [
       "Web app that analyzes Steam reviews for any game — paste an App ID to get sentiment trends, tag breakdowns, and top recurring phrases from player feedback. Free tier analyzes 30 reviews; Pro unlocks 2,000.",
   },
   {
-    name: "Spotify YouTube Connector",
-    repo: "https://github.com/wdparker93/spotify-youtube-connector",
-    site: "https://wdparker93.github.io/spotify-youtube-connector-site/",
+    name: "GrooveVision",
+    repo: "https://github.com/wdparker93/groovevision",
+    site: "https://wdparker93.github.io/groovevision-site/",
     description:
-      "Chrome extension with a Windows companion app that automatically finds and opens the YouTube music video for whatever is playing in the Spotify desktop app — no Spotify Premium required.",
+      "Chrome extension that automatically finds and opens the YouTube music video for whatever you're scrobbling to Last.fm — works with Spotify, Apple Music, YouTube Music, Tidal, and anything else that scrobbles.",
   },
   {
     name: "Portfolio Page",
