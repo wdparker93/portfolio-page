@@ -2,6 +2,13 @@ import React from "react";
 
 const projects = [
   {
+    name: "Improv Helper",
+    repo: "https://github.com/wdparker93/improvisation-helper",
+    site: "https://wdparker93.github.io/improvisation-helper-site/",
+    description:
+      "Windows desktop app that listens to your MIDI keyboard and automatically captures improvised phrases as MIDI files — ready to import into any DAW.",
+  },
+  {
     name: "ReviewMiner",
     repo: "https://github.com/wdparker93/steam-review-miner",
     site: "https://steam-review-miner-tpsm.vercel.app/",
