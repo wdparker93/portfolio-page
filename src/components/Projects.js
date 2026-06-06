@@ -16,16 +16,16 @@ const projects = [
       "Chrome extension that automatically finds and opens the YouTube music video for whatever you're scrobbling to Last.fm — works with Spotify, Apple Music, YouTube Music, Tidal, and anything else that scrobbles.",
   },
   {
-    name: "Portfolio Page",
-    repo: "https://github.com/wdparker93/portfolio-page",
-    description: "This site — a personal portfolio built with React and deployed via GitHub Actions.",
-  },
-  {
     name: "Lobbyist Donation Tracker",
     repo: "https://github.com/wdparker93/lobbyist-donation-tracker",
     site: "https://wdparker93.github.io/lobbyist-donation-tracker/",
     description:
       "React SPA tracking money flowing to U.S. senators from two sources: Senate LDA lobbying disclosures and FEC PAC/party contributions. Data syncs automatically each week via GitHub Actions with a 5-year lookback window.",
+  },
+  {
+    name: "Portfolio Page",
+    repo: "https://github.com/wdparker93/portfolio-page",
+    description: "This site — a personal portfolio built with React and deployed via GitHub Actions.",
   },
   {
     name: "Connect4",
