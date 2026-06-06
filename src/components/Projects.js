@@ -2,6 +2,13 @@ import React from "react";
 
 const projects = [
   {
+    name: "ReviewMiner",
+    repo: "https://github.com/wdparker93/steam-review-miner",
+    site: "https://steam-review-miner-tpsm.vercel.app/",
+    description:
+      "Web app that analyzes Steam reviews for any game — paste an App ID to get sentiment trends, tag breakdowns, and top recurring phrases from player feedback. Free tier analyzes 30 reviews; Pro unlocks 2,000.",
+  },
+  {
     name: "Spotify YouTube Connector",
     repo: "https://github.com/wdparker93/spotify-youtube-connector",
     site: "https://wdparker93.github.io/spotify-youtube-connector-site/",
