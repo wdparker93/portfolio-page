@@ -16,12 +16,6 @@ const projects = [
       "Chrome extension with a Windows companion app that automatically finds and opens the YouTube music video for whatever is playing in the Spotify desktop app — no Spotify Premium required.",
   },
   {
-    name: "Steam Review Miner",
-    repo: "https://github.com/wdparker93/steam-review-miner",
-    description:
-      "FastAPI and React web app that analyzes Steam game reviews via keyword tagging, phrase extraction, and sentiment timelines.",
-  },
-  {
     name: "Portfolio Page",
     repo: "https://github.com/wdparker93/portfolio-page",
     description: "This site — a personal portfolio built with React and deployed via GitHub Actions.",
