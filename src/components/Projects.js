@@ -2,11 +2,11 @@ import React from "react";
 
 const projects = [
   {
-    name: "Improv Helper",
-    repo: "https://github.com/wdparker93/improvisation-helper",
-    site: "https://wdparker93.github.io/improvisation-helper-site/",
+    name: "GrooveVision",
+    repo: "https://github.com/wdparker93/groovevision",
+    site: "https://wdparker93.github.io/groovevision-site/",
     description:
-      "Windows desktop app that listens to your MIDI keyboard and automatically captures improvised phrases as MIDI files — ready to import into any DAW.",
+      "Chrome extension that automatically finds and opens the YouTube music video for whatever you're scrobbling to Last.fm — works with Spotify, Apple Music, YouTube Music, Tidal, and anything else that scrobbles.",
   },
   {
     name: "ReviewMiner",
@@ -16,13 +16,6 @@ const projects = [
       "Web app that analyzes Steam reviews for any game — paste an App ID to get sentiment trends, tag breakdowns, and top recurring phrases from player feedback. Free tier analyzes 100 reviews; Pro unlocks 2,000.",
   },
   {
-    name: "GrooveVision",
-    repo: "https://github.com/wdparker93/groovevision",
-    site: "https://wdparker93.github.io/groovevision-site/",
-    description:
-      "Chrome extension that automatically finds and opens the YouTube music video for whatever you're scrobbling to Last.fm — works with Spotify, Apple Music, YouTube Music, Tidal, and anything else that scrobbles.",
-  },
-  {
     name: "Lobbyist Donation Tracker",
     repo: "https://github.com/wdparker93/lobbyist-donation-tracker",
     site: "https://wdparker93.github.io/lobbyist-donation-tracker/",
@@ -30,21 +23,17 @@ const projects = [
       "React SPA tracking money flowing to U.S. senators from two sources: Senate LDA lobbying disclosures and FEC PAC/party contributions. Data syncs automatically each week via GitHub Actions with a 5-year lookback window.",
   },
   {
+    name: "Improv Helper",
+    repo: "https://github.com/wdparker93/improvisation-helper",
+    site: "https://wdparker93.github.io/improvisation-helper-site/",
+    description:
+      "Windows desktop app that listens to your MIDI keyboard and automatically captures improvised phrases as MIDI files — ready to import into any DAW.",
+  },
+  {
     name: "Portfolio Page",
     repo: "https://github.com/wdparker93/portfolio-page",
-    description: "This site — a personal portfolio built with React and deployed via GitHub Actions.",
-  },
-  {
-    name: "Connect4",
-    repo: "https://github.com/wdparker93/Connect4",
     description:
-      "Java application emulating Connect Four in which two players compete to connect four tokens.",
-  },
-  {
-    name: "Bumper Cars",
-    repo: "https://github.com/wdparker93/BumperCars",
-    description:
-      "Multi-threaded C program that simulates amusement park goers exploring a park and riding bumper cars.",
+      "This site — a personal portfolio built with React and deployed via GitHub Actions. Backed by personal assistant agents that automatically answer email questions about my work and projects.",
   },
 ];
 
