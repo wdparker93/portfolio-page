@@ -47,7 +47,7 @@ Edit only the text after `&nbsp;–` for the relevant project entry. Do not chan
 
 | Portfolio name | GitHub repo | Also known as |
 |---|---|---|
-| Spotify YouTube Connector | spotify-youtube-connector | GrooveVision |
+| GrooveVision | groovevision | — |
 | Improv Helper | improvisation-helper | — |
 
 ## When to update (decision rules)
